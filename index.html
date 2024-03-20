@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Stock</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="app.js"></script>
     <script src="api.js"></script>
 </head>
 <body>
     <ul>
         <li><a href="#default">Home</a></li>
-        <li class="right"><a id="user">About</a></li>
+        <li class="right"><a id="user"></a></li>
       </ul>
     <div class="container">
-        <h1>Stock Actual</h1>
+        <h1 id="title">Stock Actual</h1>
         <!-- <div class="search">
             <input type="text" id="search" placeholder="Buscar por nombre" onkeyup="search()">
         </div> -->
@@ -64,6 +65,6 @@
             <select name="producto-eliminar" id="producto-eliminar"></select>
             <button id="btn-eliminar" class="btn-danger">Eliminar</button>
         </div>
-
+        
 </body>
 </html>
